@@ -1,4 +1,4 @@
-﻿#Varshaman - C# Wrapper For Statsd
+﻿#Varshaman - C# Implementation For Statsd As Cross Cutting Concren
 
 Statsd is a state of the art measurement tool created by [Etsy]. It allows creation of graphs and metrics in unobtrusive way with minimal performance impact.
 
