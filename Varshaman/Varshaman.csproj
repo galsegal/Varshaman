@@ -51,6 +51,7 @@
     <Compile Include="CounterAttribute.cs" />
     <Compile Include="GaugeAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequiresPostSharp.cs" />
     <Compile Include="TimingAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
