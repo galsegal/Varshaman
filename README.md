@@ -6,6 +6,8 @@ Statsd is a state of the art measurement tool created by [Etsy]. It allows creat
 
 ##Usage
 
+Use the [Nuget package] or clone this repo.
+
 ###Before You Start
 
 Make sure to configure the statsd server IP and port, as well as an optional application prefix, that will be embedded into all metrics sent by the application. This should be done once in the app start file:
@@ -80,6 +82,7 @@ You can call the metric collector directly using the Metrics static class:
 
 **Enjoy measuring!**
 
+[Nuget package]: https://nuget.org/packages/Varshaman/
 [Etsy]: https://github.com/etsy/statsd/
 [statsd-csharp-client]: https://github.com/goncalopereira/statsd-csharp-client
 [PostSharp]: http://www.postsharp.net/
