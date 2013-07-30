@@ -4,11 +4,17 @@ Statsd is a state of the art measurement tool created by [Etsy]. It allows creat
 
 **Varshaman** is a C# wrapper for statsd that gives the ability to implement metrics creation as a cross cutting concern by integrating statsd excellent C# client [statsd-csharp-client] and [PostSharp].
 
+##PostSharp Licensing
+
+This repo uses PostSharp Express, which is free for commercial uses (see [http://www.postsharp.net/Purchase/Review-Licensee.aspx] for more details). However, you will need a license key to use PostSharp and it can be requested here: [http://www.postsharp.net/Purchase/Review-Licensee.aspx]).
+
+Make sure you get it and feel the license key in PostSharp dialog on Visual Studio to avoid future problems. 
+
 ##Usage
 
 Use the [Nuget package] or clone this repo.
 
-###Before You Start
+###Configuration
 
 Make sure to configure the statsd server IP and port, as well as an optional application prefix, that will be embedded into all metrics sent by the application. This should be done once in the app start file:
 
