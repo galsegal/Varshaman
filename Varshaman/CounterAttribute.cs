@@ -10,10 +10,14 @@ namespace Varshaman
     public sealed class CounterAttribute : OnMethodBoundaryAspect
     {
         private string _name;
+        private readonly int _value;
+        private readonly double _sampleRate;
 
-        public CounterAttribute(string name)
+        public CounterAttribute(string name, int value = 1, double sampleRate = 1)
         {
             _name = name;
+            _value = value;
+            _sampleRate = sampleRate;
         }
 
         public override void OnEntry(MethodExecutionArgs args)
@@ -26,7 +30,7 @@ namespace Varshaman
 
         public override void OnExit(MethodExecutionArgs args)
         {
-            Metrics.Counter(_name);
+            Metrics.Counter(_name, _value, _sampleRate);
             base.OnExit(args);
         }
 
