@@ -13,9 +13,6 @@ TestResults
 *.user
 *.sln.docstates
 
-## Ignore nuget package files
-*.nupkg
-
 # Build results
 [Dd]ebug/
 [Rr]elease/
