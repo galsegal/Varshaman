@@ -6,7 +6,7 @@ Statsd is a state of the art measurement tool created by [Etsy]. It allows creat
 
 ##PostSharp Licensing
 
-This repo uses PostSharp Express, which is free for commercial uses (see [http://www.postsharp.net/purchase ] for more details). However, you will need a license key to use PostSharp and it can be requested here: [http://www.postsharp.net/Purchase/Review-Licensee.aspx ]).
+This repo uses PostSharp Express, which is free for commercial uses (see [http://www.postsharp.net/purchase][1] for more details). However, you will need a license key to use PostSharp and it can be requested here: [http://www.postsharp.net/Purchase/Review-Licensee.aspx ]).
 
 Make sure you get it and feel the license key in PostSharp dialog on Visual Studio to avoid future problems. 
 
@@ -92,3 +92,4 @@ You can call the metric collector directly using the Metrics static class:
 [Etsy]: https://github.com/etsy/statsd/
 [statsd-csharp-client]: https://github.com/goncalopereira/statsd-csharp-client
 [PostSharp]: http://www.postsharp.net/
+[1]: http://www.postsharp.net/purchase
