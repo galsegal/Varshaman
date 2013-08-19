@@ -40,7 +40,7 @@ namespace Varshaman
 
         public override void OnException(MethodExecutionArgs args)
         {
-            Metrics.Gauge(string.Format("{0}.error", _name), (int)_stopwatch.Elapsed.TotalMilliseconds);
+            Metrics.Counter(string.Format("{0}.error", _name), (int)_stopwatch.Elapsed.TotalMilliseconds);
             base.OnException(args);
         }
     }

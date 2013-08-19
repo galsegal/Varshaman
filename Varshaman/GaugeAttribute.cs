@@ -34,7 +34,7 @@ namespace Varshaman
 
         public override void OnException(MethodExecutionArgs args)
         {
-            Metrics.Gauge(string.Format("{0}.error", _name), _value);
+            Metrics.Counter(string.Format("{0}.error", _name), _value);
             base.OnException(args);
         }
     }
